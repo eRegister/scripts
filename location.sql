@@ -1,6 +1,7 @@
 --
 -- Table structure for table `location`
 --
+set foreign_key_checks=0;
 
 DROP TABLE IF EXISTS `location`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
