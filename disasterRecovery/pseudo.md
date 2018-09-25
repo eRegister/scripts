@@ -5,6 +5,8 @@
 * exit
 
 
+
+
 1. The idea I'm proposing is to push all of our backups to Google drive. They'll be safe.
 2. We'll be using Prasmussen's gdrive CLI app. https://github.com/prasmussen/gdrive
 3. One good inspiring guide on how the app interacts with Google Drive's API can be found on
