@@ -1,3 +1,8 @@
+* create variables to make the script more neat
+  * variable for holding site name
+  * date variable
+  * folder id variable
+
 * create full database backup in container - append facility name and date to filename
 * put in it backups/
 * copy backup file from backups/ to host OS. Put it in localbackup/

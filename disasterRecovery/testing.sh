@@ -4,7 +4,6 @@
 #$containerDir = "/backups"
 today = $(date +%d%m%Y)
 site_name = "fatima"
-site_home = "/home/makhate/"
 uploadtoDrive = "/home/makhate/lib/gdrive-linux-x64"
 folderid = "1NCqMO6rCehpWUyeHg9wgJMy0S8HALuFz"
 backupname = $site_name + "_" +$today
@@ -12,7 +11,7 @@ backupname = $site_name + "_" +$today
 echo "assigned date"
 echo $today
 echo "directory for site_home"
-echo $site_home
+echo $HOME
 echo "backupname"
 echo $backupname
 echo "directory for uploadtoDrive"
@@ -25,7 +24,7 @@ echo $uploadtoDrive
 
 #creating backup
 #docker exec -it eregister /usr/bin/mysqldump -u root --password=password openmrs > $site_home/backups/backup.sql
-docker exec -it eregister /usr/bin/mysqldump -u root --password=password openmrs > /home/makhate/backups/$site_name$(date +%d%m%Y).sql
+docker exec -it eregister /usr/bin/mysqldump -u root --password=password openmrs > $HOME/backups/$site_name$(date +%d%m%Y).sql
 
 
 #uploading to Google Drive
