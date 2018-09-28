@@ -12,3 +12,4 @@
 3. One good inspiring guide on how the app interacts with Google Drive's API can be found on
     * http://www.linuxandubuntu.com/home/google-drive-cli-client-for-linux#
     * https://www.howtoforge.com/tutorial/how-to-access-google-drive-from-linux-gdrive/
+4. We're also going to have to set cron jobs for the backups to run on a weekly basis
