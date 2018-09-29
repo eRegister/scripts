@@ -19,7 +19,7 @@ set folderid = "1NCqMO6rCehpWUyeHg9wgJMy0S8HALuFz"
 
 #creating backup
 #docker exec -it eregister /usr/bin/mysqldump -u root --password=password openmrs > $site_home/backups/backup.sql
-docker exec -it eregister /usr/bin/mysqldump -u root --password=password openmrs > /home/makhate/backups/sebata.sql
+docker exec -it eregister /usr/bin/mysqldump -u root --password=password openmrs > /home/makhate/backups/thamae_sebata.sql
 
 
 #uploading to Google Drive
