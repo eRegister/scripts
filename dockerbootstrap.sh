@@ -12,10 +12,35 @@
 #edit the cron editor like so:
 #@reboot $HOME/lib/dockerbootstrap.sh
 
-docker restart openmrseregister
+container=openmrseregister
 
-docker exec -it openmrsegister service httpd start
+#$docker restart $container
 
-docker exec -it openmrseregister service mysqld start
+#docker exec -it $container service httpd start
 
-docker exec -it openmrseregister service openmrs start
+#docker exec -it $container service mysqld start
+
+#docker exec -it $container service openmrs start
+
+case $1 in 
+
+start)
+    docker start $container
+    docker exec -it $container service httpd start
+    docker exec -it $container service mysqld start
+    docker exec -it $container service openmrs start
+    ;;
+stop)
+    docker stop $container
+    ;;
+restart
+    docker stop $container
+    sleep 6
+    docker start $container
+    docker exec -it $container service httpd start
+    docker exec -it $container service mysqld start
+    docker exec -it $container service openmrs start
+    ;;
+esac
+
+exit 0
